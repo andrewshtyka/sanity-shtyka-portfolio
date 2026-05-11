@@ -4,7 +4,7 @@
 
 [1. Basic info](#1-basic-info)
 
-- [Install](#install)
+- [Install and use](#install-and-use)
 - [Website structure](#website-structure)
 - [i18n](#i18n)
 - [Icons for Sanity](#icons-for-sanity)
@@ -38,11 +38,32 @@
 
 ## 1. Basic info
 
-### Install
+### Install and use
+
+Install:
 
 ```bash
-npm install
+npm i
 ```
+
+<br/>
+
+Create `.env` and put keys from your Sanity Project there:
+
+```js
+SANITY_STUDIO_PROJECT_ID = 'your_id'
+SANITY_STUDIO_DATASET = 'your_dataset'
+```
+
+<br/>
+
+Finally, run the local server:
+
+```bash
+npm run dev
+```
+
+<br/>
 
 ### Website structure
 
@@ -53,6 +74,8 @@ npm install
   - `[ Project page ]`
 - `** Experiments`
 - `Error page`
+
+<br/>
 
 ### i18n
 
