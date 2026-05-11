@@ -1,4 +1,4 @@
-# Sanity CMS for portfolio website
+# (WIP) Sanity CMS for portfolio website
 
 ## Contents
 
