@@ -10,8 +10,8 @@ export default defineConfig({
   name: 'default',
   title: 'sanity-shtyka-portfolio',
 
-  projectId: '93zo7q99',
-  dataset: 'production',
+  projectId: import.meta.env.SANITY_STUDIO_PROJECT_ID,
+  dataset: import.meta.env.SANITY_STUDIO_DATASET,
 
   plugins: [
     documentInternationalization({
