@@ -1,4 +1,4 @@
-# Sanity CMS for my portfolio website
+# Sanity CMS for portfolio website
 
 ## Contents
 
