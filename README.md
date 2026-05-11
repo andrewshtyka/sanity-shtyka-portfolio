@@ -1,4 +1,4 @@
-# Sanity CMS for Shtyka Portfolio Website
+# Sanity CMS for my portfolio website
 
 ## Contents
 
