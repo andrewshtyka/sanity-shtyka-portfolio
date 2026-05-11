@@ -1,10 +1,8 @@
 import {defineConfig, SchemaTypeDefinition} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemaTypes'
+import {allTypesStringNames, schemaTypes} from './schemaTypes'
 import {documentInternationalization} from '@sanity/document-internationalization'
-
-const allTypesStringNames = ['home', 'repetitiveUi']
 
 export default defineConfig({
   name: 'default',
@@ -28,7 +26,7 @@ export default defineConfig({
           .title('Pages')
           .items([
             // Custom order of pages (in the side bar menu)
-            S.documentTypeListItem('repetitiveUi'),
+            S.documentTypeListItem('globalUi'),
             S.documentTypeListItem('home'),
 
             // Divider line

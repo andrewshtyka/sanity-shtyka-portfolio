@@ -13,7 +13,7 @@
 
 [2. Editable content](#2-editable-content)
 
-- [2.0 Repetitive UI content](#20-repetitive-ui-content)
+- [2.0 Global UI content](#20-global-ui-content)
 
 - [2.1 Home page](#21-home-page)
   - [Hero](#hero)
@@ -111,7 +111,7 @@ import {DocumentIcon} from '@sanity/icons'
 
 ## 2. Editable content
 
-### 2.0 Repetitive UI content
+### 2.0 Global UI content
 
 ##### Navigation
 
@@ -136,6 +136,7 @@ import {DocumentIcon} from '@sanity/icons'
 - Subtitle
 - Tags `(text + link)`
 - Link `(text + file)`
+- Video `(video + poster)`
 
 #### About:
 

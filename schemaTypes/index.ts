@@ -1,4 +1,5 @@
-import {homeType} from './homeType'
-import {repetitiveUiType} from './repetitiveUiType'
+import {homeType} from './home/homeType'
+import { globalUiType } from './global-ui/globalUiType'
 
-export const schemaTypes = [homeType, repetitiveUiType]
+export const schemaTypes = [homeType, globalUiType]
+export const allTypesStringNames = ['home', 'globalUi']
