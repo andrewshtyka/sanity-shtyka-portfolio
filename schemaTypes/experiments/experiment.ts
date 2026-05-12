@@ -40,6 +40,23 @@ export default function experiment() {
               ],
             }),
 
+            // Card Width
+            {
+              name: 'cardWidth',
+              type: 'number',
+              title: 'Card width',
+              description: "There're 3 columns on website. 1 takes 1 column, 2 take 2, and so on. ",
+              initialValue: 1,
+              options: {
+                list: [
+                  {title: '1 col', value: 1},
+                  {title: '2 cols', value: 2},
+                  {title: '3 cols', value: 3},
+                ],
+                layout: 'radio',
+              },
+            },
+
             // Link
             ...addLink(),
 
