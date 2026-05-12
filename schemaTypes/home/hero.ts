@@ -14,17 +14,20 @@ export default function hero() {
       type: 'object',
       title: 'Hero',
       fields: [
-        // Title
-        {
-          name: 'title1',
-          type: 'string',
-          title: 'Title line 1',
-        },
-        {
-          name: 'title2',
-          type: 'string',
-          title: 'Title line 2',
-        },
+        defineField({
+          name: 'heroTitle',
+          type: 'array',
+          title: 'Hero title',
+          description: 'Put title here, use Heading style. Apply normal and italic.',
+          of: [
+            // Title
+            {
+              type: 'block',
+              title: 'Text',
+              styles: [{title: 'Heading', value: 'h4'}],
+            },
+          ],
+        }),
 
         // Subtitle
         {

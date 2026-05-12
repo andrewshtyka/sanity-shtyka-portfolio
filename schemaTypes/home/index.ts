@@ -19,7 +19,7 @@ export const homeType = defineType({
   icon: HomeIcon,
   fields: [
     ...i18nUtil(),
-    ...addPageNameHidden('Home page'),
+    ...addPageNameHidden('Home'),
     ...hero(),
     ...about(),
     ...experience(),

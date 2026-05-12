@@ -11,9 +11,16 @@ export default function previewUtilDocuments() {
         lang: 'language',
       },
       prepare({title, lang}: Props) {
+        let langWithEmoji = null
+
+        if (lang) {
+          if (lang === 'en') langWithEmoji = `🇺🇸 ${lang.toUpperCase()}`
+          else if (lang === 'ua') langWithEmoji = `🇺🇦 ${lang.toUpperCase()}`
+        }
+
         return {
           title: `${title || "Nothing's here yet"}`,
-          subtitle: `${lang ? lang.toUpperCase() : 'No language'}`,
+          subtitle: `${lang ? langWithEmoji : 'No language'}`,
         }
       },
     },

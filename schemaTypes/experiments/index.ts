@@ -10,7 +10,7 @@ export const experimentType = defineType({
   type: 'document',
   title: 'Experiment',
   icon: AsteriskIcon,
-  fields: [...i18nUtil(), ...addPageNameHidden('Experiment page'), ...experiment()],
+  fields: [...i18nUtil(), ...addPageNameHidden('Experiment'), ...experiment()],
 
   ...previewUtilDocuments(),
 })

@@ -15,7 +15,7 @@ export const globalUiType = defineType({
   icon: EarthGlobeIcon,
   fields: [
     ...i18nUtil(),
-    ...addPageNameHidden('UI content (global'),
+    ...addPageNameHidden('UI content (global)'),
     ...menu(),
     ...contact(),
     ...footer(),

@@ -11,7 +11,7 @@ export const errorType = defineType({
   type: 'document',
   title: 'Error',
   icon: ErrorOutlineIcon,
-  fields: [...i18nUtil(), ...addPageNameHidden('Error page'), ...error404(), ...errorAny()],
+  fields: [...i18nUtil(), ...addPageNameHidden('Error'), ...error404(), ...errorAny()],
 
   ...previewUtilDocuments(),
 })

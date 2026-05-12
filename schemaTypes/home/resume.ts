@@ -10,6 +10,8 @@ export default function resume() {
       name: 'resume',
       type: 'array',
       title: 'Resume',
+      description:
+        'Add heading for section title (use italic if needed). Add secondary text below, use body style.',
       of: [
         // Title and details
         {

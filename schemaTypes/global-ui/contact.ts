@@ -15,16 +15,19 @@ export default function contact() {
       title: 'Contact',
       fields: [
         // Title
-        {
-          name: 'title1',
-          type: 'string',
-          title: 'Title line 1',
-        },
-        {
-          name: 'title2',
-          type: 'string',
-          title: 'Title line 2',
-        },
+        defineField({
+          name: 'title',
+          type: 'array',
+          title: 'Title',
+          description: 'Put title here, use Heading style. Apply normal and italic.',
+          of: [
+            {
+              type: 'block',
+              title: 'Text',
+              styles: [{title: 'Heading', value: 'h4'}],
+            },
+          ],
+        }),
 
         // Video
         ...addVideo(),

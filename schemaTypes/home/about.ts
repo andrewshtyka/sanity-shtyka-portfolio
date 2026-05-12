@@ -41,17 +41,21 @@ export default function about() {
           title: 'SVG Sign',
         },
 
-        // Details
-        {
-          name: 'details1',
-          type: 'string',
-          title: 'Details line 1',
-        },
-        {
-          name: 'details2',
-          type: 'string',
-          title: 'Details line 2',
-        },
+        // Details text
+        defineField({
+          name: 'details',
+          type: 'array',
+          title: 'Details',
+          description:
+            'Write on different lines, to make text appear on different lines on website',
+          of: [
+            {
+              type: 'block',
+              title: 'Text',
+              styles: [{title: 'Body', value: 'normal'}],
+            },
+          ],
+        }),
       ],
     }),
   ]

@@ -1,4 +1,4 @@
-import {DocumentIcon} from '@sanity/icons'
+import {AddDocumentIcon} from '@sanity/icons'
 
 export default function annotationsFile(
   name: string = 'fileDownload',
@@ -9,7 +9,7 @@ export default function annotationsFile(
       name: name,
       type: 'object',
       title: title,
-      icon: DocumentIcon,
+      icon: AddDocumentIcon,
       fields: [
         {
           name: 'file',

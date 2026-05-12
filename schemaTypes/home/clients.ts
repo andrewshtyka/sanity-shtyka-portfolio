@@ -10,6 +10,7 @@ export default function clients() {
       name: 'clients',
       type: 'array',
       title: 'Clients',
+      description: 'Add heading for section title (use italic if needed). Put clients into bullet list',
       of: [
         {
           type: 'block',
