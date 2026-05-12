@@ -35,6 +35,9 @@
   - [404 not found](#404-not-found)
   - [Other errors](#other-errors)
 
+- [2.4 Experiments page](#24-experiments-page)
+  - [Experiments](#experiments-1)
+
 <br/>
 
 ## 1. Installation, usage and basic info
@@ -240,3 +243,16 @@ When you create new type, add it to:
 - Title
 - Description
 - Link `(text + link)`
+
+<br/>
+
+---
+
+### 2.4 Experiments page
+
+#### Experiments:
+
+- Title
+- Description
+- Link `(text + link)`
+- Media (`image + alt` or `video + poster`)
