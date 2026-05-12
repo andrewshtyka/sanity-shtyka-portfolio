@@ -5,12 +5,14 @@ import meta from './meta'
 import about from './about'
 import details from './details'
 import content from './content'
+import {ProjectsIcon} from '@sanity/icons'
 
 export const projectType = defineType({
   name: 'project',
   type: 'document',
   title: 'Project page',
-  fields: [...i18nUtil('titleLanguage'), ...meta(), ...about(), ...details(), ...content()],
+  icon: ProjectsIcon,
+  fields: [...i18nUtil(), ...meta(), ...about(), ...details(), ...content()],
 
   ...previewUtil(),
 })

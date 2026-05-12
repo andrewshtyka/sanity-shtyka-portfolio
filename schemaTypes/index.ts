@@ -1,6 +1,7 @@
-import {homeType} from './home/homeType'
-import {globalUiType} from './global-ui/globalUiType'
-import {projectType} from './projects/projectType'
+import {homeType} from './home'
+import {globalUiType} from './global-ui'
+import {projectType} from './projects'
+import {errorType} from './error'
 
-export const schemaTypes = [homeType, globalUiType, projectType]
-export const allTypesStringNames = ['home', 'globalUi', 'project']
+export const schemaTypes = [homeType, globalUiType, projectType, errorType]
+export const allTypesStringNames = ['home', 'globalUi', 'project', 'error']

@@ -6,13 +6,21 @@ import footer from './footer'
 import contact from './contact'
 import projectPage from './projectPage'
 import {EarthGlobeIcon} from '@sanity/icons'
+import addPageNameHidden from '../../utils/addPageNameHidden'
 
 export const globalUiType = defineType({
-  name: 'globalUi', //repetitiveUi
+  name: 'globalUi',
   type: 'document',
   title: 'UI content (global)',
   icon: EarthGlobeIcon,
-  fields: [...i18nUtil(), ...menu(), ...contact(), ...footer(), ...projectPage()],
+  fields: [
+    ...i18nUtil(),
+    ...addPageNameHidden('UI content (global'),
+    ...menu(),
+    ...contact(),
+    ...footer(),
+    ...projectPage(),
+  ],
 
   ...previewUtil(),
 })

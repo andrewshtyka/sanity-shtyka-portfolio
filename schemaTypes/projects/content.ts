@@ -1,7 +1,6 @@
 import {defineArrayMember, defineField} from 'sanity'
 import {Divider} from '../../components/Divider'
 import {ImagesIcon} from '@sanity/icons'
-import nav from './content/nav'
 import challenge from './content/challenge'
 import solution from './content/solution'
 import addImage from '../../utils/addImage'

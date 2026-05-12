@@ -1,4 +1,4 @@
-# (WIP) Sanity CMS for portfolio website
+# Sanity CMS for portfolio website
 
 ## Contents
 
@@ -29,8 +29,6 @@
   - [Meta](#meta)
   - [About](#about-1)
   - [Details](#details)
-  - [Content](#content)
-  - [Navigation](#navigation-1)
 
 - [2.3 Error page](#23-error-page)
   - [404 not found](#404-not-found)
@@ -224,12 +222,12 @@ Note: I use [x] to mark accomplished tasks. Just a convenience.
 
 #### 404 not found:
 
-- Title
-- Subtitle
-- Link `(text + link)`
+- [x] Title
+- [x] Description
+- [x] Link `(text + link)`
 
 #### Other errors:
 
-- Title
-- Subtitle
-- Link `(text + link)`
+- [x] Title
+- [x] Description
+- [x] Link `(text + link)`

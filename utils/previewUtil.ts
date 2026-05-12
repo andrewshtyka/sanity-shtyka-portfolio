@@ -1,7 +1,8 @@
-interface Prepare {
-  title: string
-  subtitle: string
-  media: any
+interface Props {
+  title?: string
+  subtitle?: string
+  lang?: string
+  media?: any
 }
 
 export default function previewUtil() {
@@ -9,13 +10,14 @@ export default function previewUtil() {
     preview: {
       select: {
         title: 'title',
-        subtitle: 'description',
+        // subtitle: 'description',
+        lang: 'language',
         media: 'image',
       },
-      prepare({title, subtitle, media}: Prepare) {
+      prepare({title, subtitle, lang, media}: Props) {
         return {
           title: `${title}`,
-          subtitle: `${subtitle || ''}`,
+          subtitle: `${lang ? lang.toUpperCase() : 'No language'}`,
           media,
         }
       },

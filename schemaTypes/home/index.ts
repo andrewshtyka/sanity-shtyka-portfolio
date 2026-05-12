@@ -9,13 +9,18 @@ import clients from './clients'
 import resume from './resume'
 import projects from './projects'
 import experiments from './experiments'
+import addPageNameHidden from '../../utils/addPageNameHidden'
+import {HomeIcon} from '@sanity/icons'
+
 
 export const homeType = defineType({
   name: 'home',
   type: 'document',
   title: 'Home page',
+  icon: HomeIcon,
   fields: [
     ...i18nUtil(),
+    ...addPageNameHidden('Home page'),
     ...hero(),
     ...about(),
     ...experience(),

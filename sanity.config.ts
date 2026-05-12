@@ -30,6 +30,7 @@ export default defineConfig({
 
             S.divider(),
             S.documentTypeListItem('globalUi'),
+            S.documentTypeListItem('error'),
             S.divider(),
 
             ...S.documentTypeListItems().filter((listItem) => {
