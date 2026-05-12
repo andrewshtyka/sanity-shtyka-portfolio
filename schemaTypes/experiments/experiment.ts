@@ -20,13 +20,6 @@ export default function experiment() {
           type: 'object',
           title: 'Item content',
           fields: [
-            // Added
-            defineField({
-              name: 'releaseDate',
-              type: 'datetime',
-              title: 'Release date',
-            }),
-
             // Title and subtitle
             defineField({
               name: 'content',
@@ -56,7 +49,7 @@ export default function experiment() {
               type: 'array',
               title: 'Media',
               description: 'Add an image or a video',
-              validation: (Rule) => Rule.max(1).error('Виберіть лише один тип медіа'),
+              validation: (Rule) => Rule.max(1),
               of: [...addImage('imageExperiment'), ...addVideo()],
             }),
           ],

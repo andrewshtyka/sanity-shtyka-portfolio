@@ -8,7 +8,7 @@ import experiment from './experiment'
 export const experimentType = defineType({
   name: 'experiment',
   type: 'document',
-  title: 'Experiment page',
+  title: 'Experiment',
   icon: AsteriskIcon,
   fields: [...i18nUtil(), ...addPageNameHidden('Experiment page'), ...experiment()],
 

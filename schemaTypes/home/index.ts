@@ -15,7 +15,7 @@ import {HomeIcon} from '@sanity/icons'
 export const homeType = defineType({
   name: 'home',
   type: 'document',
-  title: 'Home page',
+  title: 'Home',
   icon: HomeIcon,
   fields: [
     ...i18nUtil(),

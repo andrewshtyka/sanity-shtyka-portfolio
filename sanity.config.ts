@@ -14,8 +14,8 @@ export default defineConfig({
   plugins: [
     documentInternationalization({
       supportedLanguages: [
-        {id: 'en', title: 'English'},
-        {id: 'ua', title: 'Ukrainian'},
+        {id: 'en', title: '🇺🇸 Eng : '},
+        {id: 'ua', title: '🇺🇦 Ukr : '},
       ],
       schemaTypes: allTypesStringNames,
     }),

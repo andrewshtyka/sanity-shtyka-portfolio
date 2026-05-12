@@ -9,7 +9,7 @@ import errorAny from './errorAny'
 export const errorType = defineType({
   name: 'error',
   type: 'document',
-  title: 'Error page',
+  title: 'Error',
   icon: ErrorOutlineIcon,
   fields: [...i18nUtil(), ...addPageNameHidden('Error page'), ...error404(), ...errorAny()],
 

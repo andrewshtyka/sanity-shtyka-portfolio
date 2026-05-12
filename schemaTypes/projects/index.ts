@@ -10,7 +10,7 @@ import {ProjectsIcon} from '@sanity/icons'
 export const projectType = defineType({
   name: 'project',
   type: 'document',
-  title: 'Projects',
+  title: 'Project',
   icon: ProjectsIcon,
   fields: [...i18nUtil(), ...meta(), ...about(), ...details(), ...content()],
 

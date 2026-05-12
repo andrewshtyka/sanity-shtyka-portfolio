@@ -12,6 +12,7 @@ export default function details() {
       type: 'array',
       title: 'Details',
       description: 'Details about project (tech, roles, timeline)',
+      validation: (Rule) => Rule.max(3),
       of: [
         defineArrayMember({
           name: 'contentSection',
