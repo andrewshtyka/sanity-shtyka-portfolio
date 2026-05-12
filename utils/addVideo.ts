@@ -11,7 +11,6 @@ export default function addVideo(name: string = 'video', title: string = 'Video'
           name: 'video',
           type: 'file',
           title: 'Video file',
-
           options: {
             accept: 'video/*',
           },

@@ -1,6 +1,6 @@
 import {defineField} from 'sanity'
 
-export default function i18nUtil() {
+export default function i18nUtil(name: string = 'title') {
   return [
     defineField({
       name: 'language',
@@ -9,14 +9,13 @@ export default function i18nUtil() {
       hidden: true,
     }),
     defineField({
-      name: 'title',
+      name: name,
       type: 'string',
       title: 'Language',
       description: 'A convenience for a nice page name in the list',
       initialValue: 'En',
       options: {
         list: ['En', 'Ua'],
-        
       },
     }),
   ]

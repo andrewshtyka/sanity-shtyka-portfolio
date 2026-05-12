@@ -25,14 +25,13 @@ export default defineConfig({
         S.list()
           .title('Pages')
           .items([
-            // Custom order of pages (in the side bar menu)
-            S.documentTypeListItem('globalUi'),
             S.documentTypeListItem('home'),
+            S.documentTypeListItem('project'),
 
-            // Divider line
+            S.divider(),
+            S.documentTypeListItem('globalUi'),
             S.divider(),
 
-            // Other types of pages
             ...S.documentTypeListItems().filter((listItem) => {
               const id = listItem.getId()
               return id ? !allTypesStringNames.includes(id) : true
@@ -44,8 +43,8 @@ export default defineConfig({
   schema: {
     types: schemaTypes as SchemaTypeDefinition[],
 
-    // Shows 'Add UA version' and 'Add EN version',
-    // and hides default 'Add version'
+    // Show 'Add UA version' and 'Add EN version',
+    // and hide default 'Add version'
     templates: (prev) => {
       const hiddenTypes = allTypesStringNames
       return prev.filter((template) => {

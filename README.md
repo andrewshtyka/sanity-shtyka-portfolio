@@ -26,9 +26,11 @@
   - [Experiments](#experiments)
 
 - [2.2 Project page](#22-project-page)
-  - [Navigation](#navigation)
-  - [Intro](#intro)
+  - [Meta](#meta)
+  - [About](#about-1)
+  - [Details](#details)
   - [Content](#content)
+  - [Navigation](#navigation-1)
 
 - [2.3 Error page](#23-error-page)
   - [404 not found](#404-not-found)
@@ -124,11 +126,20 @@ import {DocumentIcon} from '@sanity/icons'
 - [x] Contact video `(video + poster)`
 - [x] Contact paragraph `(text + links)`
 
+##### Project page:
+
+- [x] Title `(Challenges & Solutions)`
+- [x] Subtitle `(Challenge)`
+- [x] Nav title `(Challenges)`
+- [x] End text `(The end)`
+
 <br/>
 
 ---
 
 ### 2.1 Home page
+
+Note: I use [x] to mark accomplished tasks. Just a convenience.
 
 #### Hero:
 
@@ -153,7 +164,7 @@ import {DocumentIcon} from '@sanity/icons'
 
 - [x] Title
 - [x] All nodes in table (text)<br/>
-  _Exception: Numbers_
+      _Exception: Numbers_
 
 #### Clients:
 
@@ -167,12 +178,12 @@ import {DocumentIcon} from '@sanity/icons'
 #### Projects:
 
 - [x] Title<br/>
-  _Other data must be retrieved from the `projects`_
+      _Other data must be retrieved from the `projects`_
 
 #### Experiments:
 
 - [x] Title and subtitle<br/>
-  _Other data must be retrieved from the `experiments`_
+      _Other data must be retrieved from the `experiments`_
 
 <br/>
 
@@ -180,32 +191,30 @@ import {DocumentIcon} from '@sanity/icons'
 
 ### 2.2 Project page
 
-#### Navigation:
+#### Meta:
 
-- Title
-- Text
+- [x] Project title
+- [x] Slug
+- [x] Created at (date)
 
-#### Intro:
+#### About:
 
-- Title
-- Description
-- Link `(text + link)`
-- `(multiple)` List `(title + bullets)`
-- Video `(video + poster)`
+- [x] Description
+- [x] Link
 
-#### Content:
+#### Details:
 
-- Title
-- Subtitle `(Challenge)`
-- End text `(The end)`
+- [x] `(multiple)` List `(title + bullets)`
+- [x] Video `(video + poster)`
 
 ##### `(multiple)` Content block:
 
-- Challenge text
-- `(multiple)` Solution text
-- `(multiple)` Media:
-  - Image `(image + alt text)`
-  - Video `(video + poster)`
+- [x] Navigation text (basically, short challenge description)
+- [x] `(multiple)` Challenge text
+- [x] `(multiple)` Solution text
+- [x] `(multiple)` Media:
+  - [x] Image `(image + alt text)`
+  - [x] Video `(video + poster)`
 
 <br/>
 
