@@ -6,8 +6,8 @@ export default function meta() {
     // Project title
     defineField({
       name: 'title',
-      title: 'Project Title',
       type: 'string',
+      title: 'Project Title',
     }),
 
     // Project slug
@@ -24,8 +24,9 @@ export default function meta() {
 
     // Date of creation
     defineField({
-      name: 'createdAt',
+      name: 'releaseDate',
       type: 'datetime',
+      title: 'Project release date',
       initialValue: () => new Date().toISOString(),
     }),
   ]

@@ -1,5 +1,5 @@
 import {defineType} from 'sanity'
-import previewUtil from '../../utils/previewUtil'
+import previewUtilDocuments from '../../utils/previewUtilDocuments'
 import i18nUtil from '../../utils/i18nUtil'
 import menu from './menu'
 import footer from './footer'
@@ -22,5 +22,5 @@ export const globalUiType = defineType({
     ...projectPage(),
   ],
 
-  ...previewUtil(),
+  ...previewUtilDocuments(),
 })

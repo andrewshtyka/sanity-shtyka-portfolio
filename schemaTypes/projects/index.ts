@@ -1,5 +1,5 @@
 import {defineType} from 'sanity'
-import previewUtil from '../../utils/previewUtil'
+import previewUtilDocuments from '../../utils/previewUtilDocuments'
 import i18nUtil from '../../utils/i18nUtil'
 import meta from './meta'
 import about from './about'
@@ -14,5 +14,5 @@ export const projectType = defineType({
   icon: ProjectsIcon,
   fields: [...i18nUtil(), ...meta(), ...about(), ...details(), ...content()],
 
-  ...previewUtil(),
+  ...previewUtilDocuments(),
 })

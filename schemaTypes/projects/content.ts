@@ -5,6 +5,7 @@ import challenge from './content/challenge'
 import solution from './content/solution'
 import addImage from '../../utils/addImage'
 import addVideo from '../../utils/addVideo'
+import previewUtilObjects from '../../utils/previewUtilObjects'
 
 export default function content() {
   return [
@@ -14,8 +15,8 @@ export default function content() {
         field: Divider,
       },
       name: 'section',
-      title: 'Section',
       type: 'array',
+      title: 'Section',
       description:
         'One section = one set of texts for challenge, solutions, images and videos. Add as much sections as needed.',
 
@@ -28,8 +29,8 @@ export default function content() {
           fields: [
             defineField({
               name: 'content',
-              title: 'Content',
               type: 'array',
+              title: 'Content',
               description: 'Type short challenge name - will be used for navigation floating bar',
 
               // Items of content section
@@ -53,6 +54,7 @@ export default function content() {
                   type: 'object',
                   title: 'Media',
                   icon: ImagesIcon,
+                  ...previewUtilObjects(),
                   fields: [
                     defineField({
                       name: 'items',

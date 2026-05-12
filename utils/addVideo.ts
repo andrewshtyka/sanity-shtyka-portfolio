@@ -1,4 +1,5 @@
 import {defineField} from 'sanity'
+import previewUtilObjects from './previewUtilObjects'
 
 export default function addVideo(name: string = 'video', title: string = 'Video') {
   return [
@@ -6,6 +7,7 @@ export default function addVideo(name: string = 'video', title: string = 'Video'
       name: name,
       type: 'object',
       title: title,
+      ...previewUtilObjects('Some video'),
       fields: [
         {
           name: 'video',

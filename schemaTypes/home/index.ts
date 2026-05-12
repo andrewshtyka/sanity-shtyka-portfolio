@@ -1,5 +1,5 @@
 import {defineType} from 'sanity'
-import previewUtil from '../../utils/previewUtil'
+import previewUtilDocuments from '../../utils/previewUtilDocuments'
 import i18nUtil from '../../utils/i18nUtil'
 import hero from './hero'
 import about from './about'
@@ -11,7 +11,6 @@ import projects from './projects'
 import experiments from './experiments'
 import addPageNameHidden from '../../utils/addPageNameHidden'
 import {HomeIcon} from '@sanity/icons'
-
 
 export const homeType = defineType({
   name: 'home',
@@ -31,5 +30,5 @@ export const homeType = defineType({
     ...experiments(),
   ],
 
-  ...previewUtil(),
+  ...previewUtilDocuments(),
 })

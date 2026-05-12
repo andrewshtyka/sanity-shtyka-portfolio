@@ -2,12 +2,13 @@
 
 ## Contents
 
-[1. Basic info](#1-basic-info)
+[1. Installation, usage and basic info](#1-installation-usage-and-basic-info)
 
-- [Install and use](#install-and-use)
+- [Install](#install)
 - [Website structure](#website-structure)
 - [i18n](#i18n)
 - [Icons for Sanity](#icons-for-sanity)
+- [Config updates](#config-updates)
 
 <br/>
 
@@ -36,9 +37,9 @@
 
 <br/>
 
-## 1. Basic info
+## 1. Installation, usage and basic info
 
-### Install and use
+### Install
 
 Install:
 
@@ -107,6 +108,16 @@ import {DocumentIcon} from '@sanity/icons'
 }
 ```
 
+<br/>
+
+### Config updates
+
+When you create new type, add it to:
+
+1. array `schemaTypes` in `/schemaTypes/index.ts` (as a reference to object)
+2. array `allTypesStringNames` in `/schemaTypes/index.ts` (as a string with type of your schema)
+3. object in `structureTool` at `sanity.config.ts` (place where it makes sense)
+
 </br>
 
 ## 2. Editable content
@@ -115,21 +126,21 @@ import {DocumentIcon} from '@sanity/icons'
 
 ##### Navigation
 
-- [x] Menu items `(+ mobile)`
-- [x] Footer text
+- Menu items `(+ mobile)`
+- Footer text
 
 ##### Contact
 
-- [x] Contact title
-- [x] Contact video `(video + poster)`
-- [x] Contact paragraph `(text + links)`
+- Contact title
+- Contact video `(video + poster)`
+- Contact paragraph `(text + links)`
 
 ##### Project page:
 
-- [x] Title `(Challenges & Solutions)`
-- [x] Subtitle `(Challenge)`
-- [x] Nav title `(Challenges)`
-- [x] End text `(The end)`
+- Title `(Challenges & Solutions)`
+- Subtitle `(Challenge)`
+- Nav title `(Challenges)`
+- End text `(The end)`
 
 <br/>
 
@@ -137,51 +148,49 @@ import {DocumentIcon} from '@sanity/icons'
 
 ### 2.1 Home page
 
-Note: I use [x] to mark accomplished tasks. Just a convenience.
-
 #### Hero:
 
-- [x] Title
-- [x] Subtitle
-- [x] Tags `(text + link)`
-- [x] Link `(text + file)`
-- [x] Video `(video + poster)`
+- Title
+- Subtitle
+- Tags `(text + link)`
+- Link `(text + file)`
+- Video `(video + poster)`
 
 #### About:
 
-- [x] Paragraph `(text + links + image)`
-- [x] Sign `(svg)`
-- [x] Details
+- Paragraph `(text + links + image)`
+- Sign `(svg)`
+- Details
 
 #### Experience:
 
-- [x] Title
-- [x] All nodes in table (text)
+- Title
+- All nodes in table (text)
 
 #### Achievements:
 
-- [x] Title
-- [x] All nodes in table (text)<br/>
-      _Exception: Numbers_
+- Title
+- All nodes in table (text)<br/>
+  _Exception: Numbers_
 
 #### Clients:
 
-- [x] Title (normal, italic) and clients (bullet list)
+- Title (normal, italic) and clients (bullet list)
 
 #### Download resume:
 
-- [x] Title and details
-- [x] File
+- Title and details
+- File
 
 #### Projects:
 
-- [x] Title<br/>
-      _Other data must be retrieved from the `projects`_
+- Title<br/>
+  _Other data must be retrieved from the `projects`_
 
 #### Experiments:
 
-- [x] Title and subtitle<br/>
-      _Other data must be retrieved from the `experiments`_
+- Title and subtitle<br/>
+  _Other data must be retrieved from the `experiments`_
 
 <br/>
 
@@ -191,28 +200,28 @@ Note: I use [x] to mark accomplished tasks. Just a convenience.
 
 #### Meta:
 
-- [x] Project title
-- [x] Slug
-- [x] Created at (date)
+- Project title
+- Slug
+- Created at (date)
 
 #### About:
 
-- [x] Description
-- [x] Link
+- Description
+- Link
 
 #### Details:
 
-- [x] `(multiple)` List `(title + bullets)`
-- [x] Video `(video + poster)`
+- `(multiple)` List `(title + bullets)`
+- Video `(video + poster)`
 
 ##### `(multiple)` Content block:
 
-- [x] Navigation text (basically, short challenge description)
-- [x] `(multiple)` Challenge text
-- [x] `(multiple)` Solution text
-- [x] `(multiple)` Media:
-  - [x] Image `(image + alt text)`
-  - [x] Video `(video + poster)`
+- Navigation text (basically, short challenge description)
+- `(multiple)` Challenge text
+- `(multiple)` Solution text
+- `(multiple)` Media:
+  - Image `(image + alt text)`
+  - Video `(video + poster)`
 
 <br/>
 
@@ -222,12 +231,12 @@ Note: I use [x] to mark accomplished tasks. Just a convenience.
 
 #### 404 not found:
 
-- [x] Title
-- [x] Description
-- [x] Link `(text + link)`
+- Title
+- Description
+- Link `(text + link)`
 
 #### Other errors:
 
-- [x] Title
-- [x] Description
-- [x] Link `(text + link)`
+- Title
+- Description
+- Link `(text + link)`

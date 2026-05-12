@@ -6,6 +6,7 @@ export default function about() {
     defineField({
       name: 'about',
       type: 'object',
+      title: 'About',
       components: {
         field: Divider,
       },
@@ -13,12 +14,13 @@ export default function about() {
         {
           name: 'description',
           type: 'string',
+          title: 'Description',
           description: 'Short description of the project',
         },
         {
-          title: 'Website Link',
           name: 'link',
           type: 'url',
+          title: 'Website Link',
         },
       ],
     }),

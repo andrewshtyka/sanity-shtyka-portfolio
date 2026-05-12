@@ -1,6 +1,6 @@
 import {defineType} from 'sanity'
 import {ErrorOutlineIcon} from '@sanity/icons'
-import previewUtil from '../../utils/previewUtil'
+import previewUtilDocuments from '../../utils/previewUtilDocuments'
 import i18nUtil from '../../utils/i18nUtil'
 import addPageNameHidden from '../../utils/addPageNameHidden'
 import error404 from './error404'
@@ -13,5 +13,5 @@ export const errorType = defineType({
   icon: ErrorOutlineIcon,
   fields: [...i18nUtil(), ...addPageNameHidden('Error page'), ...error404(), ...errorAny()],
 
-  ...previewUtil(),
+  ...previewUtilDocuments(),
 })

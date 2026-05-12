@@ -8,10 +8,10 @@ export default function details() {
       components: {
         field: Divider,
       },
-      title: 'Details',
       name: 'details',
-      description: 'Details about project (tech, roles, timeline)',
       type: 'array',
+      title: 'Details',
+      description: 'Details about project (tech, roles, timeline)',
       of: [
         defineArrayMember({
           name: 'contentSection',
