@@ -2,7 +2,7 @@ import {defineField} from 'sanity'
 import {Divider} from '../../components/Divider'
 import addVideo from '../../utils/addVideo'
 import addLink from '../../utils/addLink'
-import addLinkDownloadFile from '../../utils/addLinkDownloadFile'
+import addDownloadFile from '../../utils/addDownloadFile'
 
 export default function hero() {
   return [
@@ -49,7 +49,7 @@ export default function hero() {
         },
 
         // Link to download file
-        ...addLinkDownloadFile(),
+        ...addDownloadFile('resume', 'Resume / CV file'),
 
         // Video
         ...addVideo(),

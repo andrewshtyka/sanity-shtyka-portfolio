@@ -16,6 +16,6 @@ export function Divider(props: FieldProps) {
 const lineStyle = {
   width: '100%',
   borderTop: '0.2rem solid #000',
-  marginBlockStart: '1rem',
+  marginBlockStart: '2rem',
   marginBlockEnd: '-0.5rem',
 }

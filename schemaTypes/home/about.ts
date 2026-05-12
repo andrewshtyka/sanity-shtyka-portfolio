@@ -1,34 +1,18 @@
 import {defineField} from 'sanity'
 import {Divider} from '../../components/Divider'
-import addVideo from '../../utils/addVideo'
 import annotationsLink from '../../utils/annotationsLink'
-import annotationsFile from '../../utils/annotationsFile'
+import annotationsImage from '../../utils/annotationsImage'
 
-export default function contact() {
+export default function about() {
   return [
     defineField({
       components: {
         field: Divider,
       },
-      name: 'contact',
+      name: 'about',
       type: 'object',
-      title: 'Contact',
+      title: 'About',
       fields: [
-        // Title
-        {
-          name: 'title1',
-          type: 'string',
-          title: 'Title line 1',
-        },
-        {
-          name: 'title2',
-          type: 'string',
-          title: 'Title line 2',
-        },
-
-        // Video
-        ...addVideo(),
-
         // Text with attachments (link, file)
         {
           name: 'message',
@@ -42,12 +26,31 @@ export default function contact() {
                 annotations: [
                   // 1. Link (default)
                   ...annotationsLink(),
-                  // 2. Attach downloadable file to link
-                  ...annotationsFile(),
+                  // 2. Attach image
+                  ...annotationsImage(),
                 ],
               },
             },
           ],
+        },
+
+        // Image (svg)
+        {
+          name: 'svg',
+          type: 'image',
+          title: 'SVG Sign',
+        },
+
+        // Details
+        {
+          name: 'details1',
+          type: 'string',
+          title: 'Details line 1',
+        },
+        {
+          name: 'details2',
+          type: 'string',
+          title: 'Details line 2',
         },
       ],
     }),

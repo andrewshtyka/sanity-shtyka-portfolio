@@ -115,14 +115,14 @@ import {DocumentIcon} from '@sanity/icons'
 
 ##### Navigation
 
-- Menu items `(+ mobile)`
-- Footer text
+- [x] Menu items `(+ mobile)`
+- [x] Footer text
 
 ##### Contact
 
-- Contact title
-- Contact video `(video + poster)`
-- Contact paragraph `(text + links)`
+- [x] Contact title
+- [x] Contact video `(video + poster)`
+- [x] Contact paragraph `(text + links)`
 
 <br/>
 
@@ -132,50 +132,46 @@ import {DocumentIcon} from '@sanity/icons'
 
 #### Hero:
 
-- Title
-- Subtitle
-- Tags `(text + link)`
-- Link `(text + file)`
-- Video `(video + poster)`
+- [x] Title
+- [x] Subtitle
+- [x] Tags `(text + link)`
+- [x] Link `(text + file)`
+- [x] Video `(video + poster)`
 
 #### About:
 
-- Paragraph `(text + links)`
-- Sign `(svg)`
-- Details
+- [x] Paragraph `(text + links + image)`
+- [x] Sign `(svg)`
+- [x] Details
 
 #### Experience:
 
-- Title
-- All nodes in table (text)
+- [x] Title
+- [x] All nodes in table (text)
 
 #### Achievements:
 
-- Title
-- All nodes in table (text)<br/>
+- [x] Title
+- [x] All nodes in table (text)<br/>
   _Exception: Numbers_
 
 #### Clients:
 
-- Title
-- Clients
+- [x] Title (normal, italic) and clients (bullet list)
 
 #### Download resume:
 
-- Title
-- Details
-- File
+- [x] Title and details
+- [x] File
 
 #### Projects:
 
-- Title
-- Link `(text + link)`<br/>
+- [x] Title<br/>
   _Other data must be retrieved from the `projects`_
 
 #### Experiments:
 
-- Title
-- Subtitle<br/>
+- [x] Title and subtitle<br/>
   _Other data must be retrieved from the `experiments`_
 
 <br/>
