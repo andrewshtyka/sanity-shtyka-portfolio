@@ -5,7 +5,6 @@ import challenge from './content/challenge'
 import solution from './content/solution'
 import addImage from '../../utils/addImage'
 import addVideo from '../../utils/addVideo'
-import previewUtilObjects from '../../utils/previewUtilObjects'
 
 export default function content() {
   return [
@@ -31,7 +30,7 @@ export default function content() {
               name: 'content',
               type: 'array',
               title: 'Content',
-              description: 'Type short challenge name - will be used for navigation floating bar',
+              description: 'Type short challenge name - will be used for navigation floating bar. One solution = one paragraph (if soultion consists of 2 paragraphs, just add 2 separate solutions one after another)',
 
               // Items of content section
               of: [
@@ -54,7 +53,6 @@ export default function content() {
                   type: 'object',
                   title: 'Media',
                   icon: ImagesIcon,
-                  ...previewUtilObjects(),
                   fields: [
                     defineField({
                       name: 'items',

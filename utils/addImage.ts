@@ -1,5 +1,4 @@
 import {defineField} from 'sanity'
-import previewUtilObjects from './previewUtilObjects'
 
 export default function addImage(name: string = 'image', title: string = 'Image') {
   return [
@@ -7,7 +6,6 @@ export default function addImage(name: string = 'image', title: string = 'Image'
       name: name,
       type: 'object',
       title: title,
-      ...previewUtilObjects('Some image'),
       fields: [
         {
           name: 'image',

@@ -26,8 +26,8 @@ export default defineConfig({
           .title('Pages')
           .items([
             S.documentTypeListItem('home'),
-            S.documentTypeListItem('experiment'),
             S.documentTypeListItem('project'),
+            S.documentTypeListItem('experiment'),
 
             S.divider(),
             S.documentTypeListItem('globalUi'),

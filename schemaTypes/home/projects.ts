@@ -20,5 +20,13 @@ export default function projects() {
         },
       ],
     }),
+    // Button
+    defineField({
+      name: 'buttonTitle',
+      type: 'string',
+      title: 'Button title',
+      description: 'Text inside the button, that leads to the project',
+      initialValue: 'See case study',
+    }),
   ]
 }

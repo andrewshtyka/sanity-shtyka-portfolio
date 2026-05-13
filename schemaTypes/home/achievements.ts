@@ -1,6 +1,8 @@
 import {defineField} from 'sanity'
 import {Divider} from '../../components/Divider'
 import addLink from '../../utils/addLink'
+import annotationsLink from '../../utils/annotationsLink'
+import annotationsImage from '../../utils/annotationsImage'
 
 export default function achievements() {
   return [
@@ -42,6 +44,14 @@ export default function achievements() {
                       type: 'block',
                       title: 'Text',
                       styles: [{title: 'Body', value: 'normal'}],
+                      marks: {
+                        annotations: [
+                          // 1. Link (default)
+                          ...annotationsLink(),
+                          // 2. Attach image
+                          ...annotationsImage(),
+                        ],
+                      },
                     },
                   ],
                 }),

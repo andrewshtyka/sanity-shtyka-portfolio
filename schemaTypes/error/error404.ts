@@ -25,11 +25,11 @@ export default function error404() {
           title: 'Description',
         },
 
-        // Link
+        // Button
         {
-          name: 'linkName',
+          name: 'buttonTitle',
           type: 'string',
-          title: 'Link name',
+          title: 'Button title',
           description: 'Text inside the button, that leads to home page',
           initialValue: 'Go to home page',
         },

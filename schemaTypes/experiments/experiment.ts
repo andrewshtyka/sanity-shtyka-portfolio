@@ -20,6 +20,14 @@ export default function experiment() {
           type: 'object',
           title: 'Item content',
           fields: [
+            // Id
+            defineField({
+              name: 'customId',
+              type: 'number',
+              title: 'ID of experiment',
+              description: 'Set it by yourself',
+            }),
+
             // Title and subtitle
             defineField({
               name: 'content',

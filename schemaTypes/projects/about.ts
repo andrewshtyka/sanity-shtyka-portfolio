@@ -18,6 +18,13 @@ export default function about() {
           description: 'Short description of the project',
         },
         {
+          name: 'buttonTitle',
+          type: 'string',
+          title: 'Button title',
+          description: 'Text inside the button',
+          initialValue: 'Visit website',
+        },
+        {
           name: 'link',
           type: 'url',
           title: 'Website Link',
