@@ -6,7 +6,7 @@ export default function menu() {
     defineField(
       // Image (svg)
       {
-        name: 'svg',
+        name: 'logoSvg',
         type: 'image',
         title: 'Logo SVG',
       },
