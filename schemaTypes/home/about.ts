@@ -2,6 +2,7 @@ import {defineField} from 'sanity'
 import {Divider} from '../../components/Divider'
 import annotationsLink from '../../utils/annotationsLink'
 import annotationsImage from '../../utils/annotationsImage'
+import addSvg from '../../utils/addSvg'
 
 export default function about() {
   return [
@@ -35,11 +36,7 @@ export default function about() {
         },
 
         // Image (svg)
-        {
-          name: 'svg',
-          type: 'image',
-          title: 'SVG Sign',
-        },
+        ...addSvg('svg', 'SVG Sign'),
 
         // Details text
         defineField({
