@@ -1,8 +1,5 @@
-import {defineField} from 'sanity'
+import {defineArrayMember, defineField} from 'sanity'
 import {Divider} from '../../components/Divider'
-import addLink from '../../utils/addLink'
-import annotationsLink from '../../utils/annotationsLink'
-import annotationsImage from '../../utils/annotationsImage'
 
 export default function achievements() {
   return [
@@ -44,14 +41,6 @@ export default function achievements() {
                       type: 'block',
                       title: 'Text',
                       styles: [{title: 'Body', value: 'normal'}],
-                      marks: {
-                        annotations: [
-                          // 1. Link (default)
-                          ...annotationsLink(),
-                          // 2. Attach image
-                          ...annotationsImage(),
-                        ],
-                      },
                     },
                   ],
                 }),
@@ -59,6 +48,32 @@ export default function achievements() {
             }),
           ],
         }),
+
+        // Add images (to be attached to items above)
+        {
+          name: 'images',
+          type: 'array',
+          title: 'Images (to be attached to items above)',
+          of: [
+            defineArrayMember({
+              name: 'imageContent',
+              type: 'object',
+              title: 'Image content',
+              fields: [
+                {
+                  name: 'image',
+                  type: 'image',
+                  title: 'Image',
+                },
+                {
+                  name: 'alt',
+                  type: 'string',
+                  title: 'Image Alt',
+                },
+              ],
+            }),
+          ],
+        },
       ],
     }),
   ]

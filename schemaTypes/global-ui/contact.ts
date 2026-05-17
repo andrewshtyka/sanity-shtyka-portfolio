@@ -1,7 +1,6 @@
 import {defineField} from 'sanity'
 import {Divider} from '../../components/Divider'
 import addVideo from '../../utils/addVideo'
-import annotationsLink from '../../utils/annotationsLink'
 import annotationsFile from '../../utils/annotationsFile'
 
 export default function contact() {
@@ -32,7 +31,7 @@ export default function contact() {
         // Video
         ...addVideo(),
 
-        // Text with attachments (link, file)
+        // Text with links
         {
           name: 'message',
           type: 'array',
@@ -41,16 +40,18 @@ export default function contact() {
             {
               type: 'block',
               styles: [{title: 'Body', value: 'normal'}],
-              marks: {
-                annotations: [
-                  // 1. Link (default)
-                  ...annotationsLink(),
-                  // 2. Attach downloadable file to link
-                  ...annotationsFile(),
-                ],
-              },
             },
           ],
+        },
+
+        // Attach file (CV)
+        {
+          name: 'file',
+          type: 'file',
+          title: 'File (CV)',
+          options: {
+            storeOriginalFilename: true,
+          },
         },
       ],
     }),

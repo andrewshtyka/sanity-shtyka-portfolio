@@ -1,8 +1,7 @@
-import {defineField} from 'sanity'
+import {defineArrayMember, defineField} from 'sanity'
 import {Divider} from '../../components/Divider'
-import annotationsLink from '../../utils/annotationsLink'
-import annotationsImage from '../../utils/annotationsImage'
 import addSvg from '../../utils/addSvg'
+import addImage from '../../utils/addImage'
 
 export default function about() {
   return [
@@ -14,7 +13,7 @@ export default function about() {
       type: 'object',
       title: 'About',
       fields: [
-        // Text with attachments (link, file)
+        // Text with links
         {
           name: 'message',
           type: 'array',
@@ -23,15 +22,33 @@ export default function about() {
             {
               type: 'block',
               styles: [{title: 'Body', value: 'normal'}],
-              marks: {
-                annotations: [
-                  // 1. Link (default)
-                  ...annotationsLink(),
-                  // 2. Attach image
-                  ...annotationsImage(),
-                ],
-              },
             },
+          ],
+        },
+
+        // Add images (to be attached to the text above)
+        {
+          name: 'images',
+          type: 'array',
+          title: 'Images (to be attached to text above)',
+          of: [
+            defineArrayMember({
+              name: 'imageContent',
+              type: 'object',
+              title: 'Image content',
+              fields: [
+                {
+                  name: 'image',
+                  type: 'image',
+                  title: 'Image',
+                },
+                {
+                  name: 'alt',
+                  type: 'string',
+                  title: 'Image Alt',
+                },
+              ],
+            }),
           ],
         },
 
