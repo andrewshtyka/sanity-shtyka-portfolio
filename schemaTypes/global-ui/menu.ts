@@ -23,8 +23,24 @@ export default function menu() {
     // Mobile menu name
     defineField({
       name: 'menuMobile',
-      type: 'string',
+      type: 'object',
       title: 'Menu mobile name',
+      fields: [
+        {
+          name: 'open',
+          type: 'string',
+          title: 'Name for open menu button',
+          initialValue: 'Menu',
+          description: 'Menu',
+        },
+        {
+          name: 'close',
+          type: 'string',
+          title: 'Name for close menu button',
+          initialValue: 'Close',
+          description: 'Close',
+        },
+      ],
     }),
   ]
 }
