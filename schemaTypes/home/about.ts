@@ -1,7 +1,5 @@
 import {defineArrayMember, defineField} from 'sanity'
 import {Divider} from '../../components/Divider'
-import addSvg from '../../utils/addSvg'
-import addImage from '../../utils/addImage'
 
 export default function about() {
   return [
@@ -51,9 +49,6 @@ export default function about() {
             }),
           ],
         },
-
-        // Image (svg)
-        ...addSvg('svg', 'SVG Sign'),
 
         // Details text
         defineField({
