@@ -34,5 +34,14 @@ export default function resume() {
         storeOriginalFilename: true,
       },
     },
+
+    // File name
+    {
+      name: 'fileName',
+      type: 'string',
+      title: 'CV / Resume file name',
+      description: 'cv-andrew-shtyka-frontend',
+      initialValue: 'cv-andrew-shtyka-frontend',
+    },
   ]
 }

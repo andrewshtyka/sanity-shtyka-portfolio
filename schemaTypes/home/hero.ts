@@ -54,6 +54,15 @@ export default function hero() {
         // Link to download file
         ...addDownloadFile('resume', 'Resume / CV file'),
 
+        // File name
+        {
+          name: 'fileName',
+          type: 'string',
+          title: 'CV / Resume file name',
+          description: 'cv-andrew-shtyka-frontend',
+          initialValue: 'cv-andrew-shtyka-frontend',
+        },
+
         // Video
         ...addVideo(),
       ],
