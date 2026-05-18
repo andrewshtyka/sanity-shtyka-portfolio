@@ -40,8 +40,8 @@ export default function resume() {
       name: 'fileName',
       type: 'string',
       title: 'CV / Resume file name',
-      description: 'cv-andrew-shtyka-frontend',
-      initialValue: 'cv-andrew-shtyka-frontend',
+      description: 'cv-andrew-shtyka-frontend.pdf',
+      initialValue: 'cv-andrew-shtyka-frontend.pdf',
     },
   ]
 }

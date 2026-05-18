@@ -3,27 +3,6 @@ import {Divider} from '../../components/Divider'
 
 export default function menu() {
   return [
-    // defineField({
-    //   components: {
-    //     field: Divider,
-    //   },
-    //   name: 'logoSvg',
-    //   type: 'object',
-    //   title: 'Logo SVG',
-    //   fields: [
-    //     defineField({
-    //       name: 'svg',
-    //       type: 'image',
-    //       title: 'SVG file',
-    //     }),
-    //     defineField({
-    //       name: 'alt',
-    //       type: 'string',
-    //       title: 'Alt text',
-    //     }),
-    //   ],
-    // }),
-
     // Menu items
     defineField({
       components: {
