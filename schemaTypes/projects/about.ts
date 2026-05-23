@@ -15,7 +15,7 @@ export default function about() {
           name: 'description',
           type: 'string',
           title: 'Description',
-          description: 'Short description of the project',
+          description: 'Short description of the project (40-45 chars)',
         },
         {
           name: 'buttonTitle',

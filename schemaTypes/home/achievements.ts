@@ -42,6 +42,25 @@ export default function achievements() {
                       title: 'Text',
                       styles: [{title: 'Body', value: 'normal'}],
                     },
+
+                    // add images
+                    defineArrayMember({
+                      name: 'imageContent',
+                      type: 'object',
+                      title: 'Image content',
+                      fields: [
+                        {
+                          name: 'image',
+                          type: 'image',
+                          title: 'Image',
+                        },
+                        {
+                          name: 'alt',
+                          type: 'string',
+                          title: 'Image Alt',
+                        },
+                      ],
+                    }),
                   ],
                 }),
               ],
@@ -50,30 +69,31 @@ export default function achievements() {
         }),
 
         // Add images (to be attached to items above)
-        {
-          name: 'images',
-          type: 'array',
-          title: 'Images (to be attached to items above)',
-          of: [
-            defineArrayMember({
-              name: 'imageContent',
-              type: 'object',
-              title: 'Image content',
-              fields: [
-                {
-                  name: 'image',
-                  type: 'image',
-                  title: 'Image',
-                },
-                {
-                  name: 'alt',
-                  type: 'string',
-                  title: 'Image Alt',
-                },
-              ],
-            }),
-          ],
-        },
+
+        // {
+        //   name: 'images',
+        //   type: 'array',
+        //   title: 'Images (to be attached to items above)',
+        //   of: [
+        //     defineArrayMember({
+        //       name: 'imageContent',
+        //       type: 'object',
+        //       title: 'Image content',
+        //       fields: [
+        //         {
+        //           name: 'image',
+        //           type: 'image',
+        //           title: 'Image',
+        //         },
+        //         {
+        //           name: 'alt',
+        //           type: 'string',
+        //           title: 'Image Alt',
+        //         },
+        //       ],
+        //     }),
+        //   ],
+        // },
       ],
     }),
   ]
