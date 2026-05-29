@@ -3,8 +3,8 @@ import {Divider} from '../../components/Divider'
 import {ImagesIcon} from '@sanity/icons'
 import challenge from './content/challenge'
 import solution from './content/solution'
-import addImage from '../../utils/addImage'
-import addVideo from '../../utils/addVideo'
+import addVideoProject from '../../utils/addVideoProject'
+import addImageProject from '../../utils/addImageProject'
 
 export default function content() {
   return [
@@ -59,7 +59,7 @@ export default function content() {
                       type: 'array',
                       title: 'Items',
                       description: 'Add images and videos',
-                      of: [...addImage('imageDetails'), ...addVideo()],
+                      of: [...addImageProject('imageDetails'), ...addVideoProject()],
                     }),
                   ],
                 }),

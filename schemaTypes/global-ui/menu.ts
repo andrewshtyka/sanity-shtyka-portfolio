@@ -20,6 +20,15 @@ export default function menu() {
       ],
     }),
 
+    // Link to home page (visible on every page except for home page, obviously)
+    defineField({
+      name: 'buttonHome',
+      type: 'string',
+      title: 'Go to home button - title',
+      description: 'Text inside the button, that leads to home page',
+      initialValue: 'Go to home page',
+    }),
+
     // Mobile menu name
     defineField({
       name: 'menuMobile',
