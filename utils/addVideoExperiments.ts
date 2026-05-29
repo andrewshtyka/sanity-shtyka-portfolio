@@ -1,6 +1,6 @@
 import {defineField} from 'sanity'
 
-export default function addVideoProject(name: string = 'video', title: string = 'Video') {
+export default function Experiments(name: string = 'video', title: string = 'Video') {
   return [
     defineField({
       name: name,
@@ -12,12 +12,13 @@ export default function addVideoProject(name: string = 'video', title: string = 
           name: 'cardWidth',
           type: 'number',
           title: 'Card width',
-          description: "There're 2 columns on project page. 1 takes 1 column, 2 is full width",
-          initialValue: 2,
+          description: "There're 3 columns on home page. 1 takes 1 column, 2 take 2, etc.",
+          initialValue: 3,
           options: {
             list: [
               {title: '1 col', value: 1},
               {title: '2 cols', value: 2},
+              {title: '3 cols', value: 3},
             ],
             layout: 'radio',
           },

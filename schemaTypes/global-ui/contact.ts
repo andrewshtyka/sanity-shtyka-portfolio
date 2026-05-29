@@ -1,7 +1,6 @@
 import {defineField} from 'sanity'
 import {Divider} from '../../components/Divider'
 import addVideo from '../../utils/addVideo'
-import annotationsFile from '../../utils/annotationsFile'
 
 export default function contact() {
   return [
