@@ -65,6 +65,14 @@ export default function hero() {
 
         // Video
         ...addVideo(),
+
+        // Scroll down
+        {
+          name: 'scrollLabel',
+          type: 'string',
+          title: 'Label for infinite line',
+          description: 'Scroll to explore / Скрольте вниз',
+        },
       ],
     }),
   ]
