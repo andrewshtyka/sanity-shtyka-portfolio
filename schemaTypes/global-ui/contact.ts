@@ -28,7 +28,46 @@ export default function contact() {
         }),
 
         // Video
-        ...addVideo(),
+        defineField({
+          name: 'video',
+          type: 'object',
+          title: 'Video',
+          fields: [
+            // Show / Hide video UI
+            {
+              name: 'isVideoVisible',
+              type: 'boolean',
+              title: 'Show video?',
+              initialValue: true,
+              options: {
+                list: [
+                  {title: 'Visible', value: true},
+                  {title: 'Hidden', value: false},
+                ],
+                layout: 'radio',
+              },
+            },
+
+            {
+              name: 'video',
+              type: 'file',
+              title: 'Video file',
+              options: {
+                accept: 'video/*',
+              },
+              hidden: ({parent}) => !parent?.isVideoVisible,
+            },
+            {
+              name: 'poster',
+              type: 'image',
+              title: 'Video Poster',
+              description:
+                'In case of slow internet connection, poster will be shown while video is being loaded',
+              hidden: ({parent}) => !parent?.isVideoVisible,
+            },
+          ],
+        }),
+        // ...addVideo(),
 
         // Text with links
         {
