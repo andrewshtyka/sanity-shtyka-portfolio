@@ -64,7 +64,5 @@ export default function experiment() {
         }),
       ],
     }),
-
-    // ...addVideo('heroVideo', 'Hero Video'),
   ]
 }
