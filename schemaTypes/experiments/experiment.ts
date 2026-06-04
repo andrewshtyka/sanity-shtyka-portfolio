@@ -20,6 +20,21 @@ export default function experiment() {
           type: 'object',
           title: 'Item content',
           fields: [
+            // Show / Hide experiment from UI
+            {
+              name: 'isExperimentVisible',
+              type: 'boolean',
+              title: 'Show this experiment?',
+              initialValue: true,
+              options: {
+                list: [
+                  {title: 'Visible', value: true},
+                  {title: 'Hidden', value: false},
+                ],
+                layout: 'radio',
+              },
+            },
+
             // Id
             defineField({
               name: 'customId',
