@@ -7,6 +7,7 @@
 - [Install](#install)
 - [Website structure](#website-structure)
 - [i18n](#i18n)
+- [Media library](#media-library)
 - [Icons for Sanity](#icons-for-sanity)
 - [Config updates](#config-updates)
 
@@ -93,6 +94,29 @@ npm install --save @sanity/document-internationalization
 ```
 
 [Guide to plugin on Github](https://github.com/sanity-io/plugins/tree/main/plugins/%40sanity/document-internationalization#install)
+
+<br/>
+
+### Media library
+
+A convenient way to see all uploaded images, videos, files.
+
+Install:
+
+```js
+npm install sanity-plugin-media
+```
+
+In `sanity.config.ts`:
+
+```ts
+import {media} from 'sanity-plugin-media'
+
+plugins: [
+    ...
+    media(), 
+  ],
+```
 
 <br/>
 

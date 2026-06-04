@@ -3,6 +3,7 @@ import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {allTypesStringNames, schemaTypes} from './schemaTypes'
 import {documentInternationalization} from '@sanity/document-internationalization'
+import {media} from 'sanity-plugin-media'
 
 export default defineConfig({
   name: 'default',
@@ -40,6 +41,7 @@ export default defineConfig({
             }),
           ]),
     }),
+    media(),
   ],
 
   schema: {
