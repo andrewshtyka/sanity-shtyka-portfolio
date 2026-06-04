@@ -33,7 +33,7 @@ export default function experiment() {
               name: 'content',
               type: 'object',
               title: 'Content',
-              description: 'Set heading and bullet list of items',
+              description: 'Set heading and description',
               fields: [
                 {
                   name: 'title',
