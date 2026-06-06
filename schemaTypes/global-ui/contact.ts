@@ -69,6 +69,42 @@ export default function contact() {
         }),
         // ...addVideo(),
 
+        // Image
+        defineField({
+          name: 'image',
+          type: 'object',
+          title: 'Image',
+          fields: [
+            // Show / Hide image UI
+            {
+              name: 'isImageVisible',
+              type: 'boolean',
+              title: 'Show image?',
+              initialValue: true,
+              options: {
+                list: [
+                  {title: 'Visible', value: true},
+                  {title: 'Hidden', value: false},
+                ],
+                layout: 'radio',
+              },
+            },
+
+            {
+              name: 'image',
+              type: 'image',
+              title: 'Image',
+              hidden: ({parent}) => !parent?.isImageVisible,
+            },
+            {
+              name: 'alt',
+              type: 'string',
+              title: 'Image Alt',
+              hidden: ({parent}) => !parent?.isImageVisible,
+            },
+          ],
+        }),
+
         // Text with links
         {
           name: 'message',

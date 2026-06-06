@@ -18,7 +18,7 @@ export default function hero() {
           name: 'heroTitle',
           type: 'array',
           title: 'Hero title',
-          description: 'Put title here, use Heading style. Apply normal and italic.',
+          description: 'Put title here,use Heading style. Apply normal and italic.',
           of: [
             // Title
             {
