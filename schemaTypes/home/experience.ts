@@ -42,12 +42,18 @@ export default function experience() {
           name: 'table',
           type: 'array',
           title: 'Table content',
+          description: 'Latest - on top',
           of: [
             defineField({
               name: 'item',
               type: 'object',
               title: 'Item',
               fields: [
+                {
+                  name: 'role',
+                  type: 'string',
+                  title: 'Role',
+                },
                 {
                   name: 'years',
                   type: 'string',
@@ -57,11 +63,6 @@ export default function experience() {
                   name: 'duration',
                   type: 'string',
                   title: 'Duration',
-                },
-                {
-                  name: 'role',
-                  type: 'string',
-                  title: 'Role',
                 },
                 {
                   name: 'company',
